@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body , html {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+}
+
+
+section {
+    width: 50vmax;
+    min-height: 20vh;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 2vw 0;
+    box-shadow: 10px 10px 25px rgba(255, 255, 255, 0.276);
+}
+
+.quote {
+    color: white;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    font-size: 2.75vw;
+    font-weight: 600;
+    align-self: center;
+}
+
+.author {
+    width: fit-content;
+    height: 10%;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    color: white;
+    font-size: 1.75vw;
+    font-weight: 400;
+    font-style: italic;
+}
+
+button {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5vw 1.5vw;
+    cursor: pointer;
+    float: right;
+    margin-right: 2.5vw;
+    margin-top: 2.5vw;
+    box-sizing: border-box;
+    transition: font-size 0.1s ease-out;
+}
+
+button:hover {
+    font-size: 0.95vw;
+}
+
+/* Mobile first approach */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        width: 52vmax;
+        padding: 5vw 0;
+    }
+
+    .quote {
+        font-size: 8vw;
+        margin-top: 2vw;
+    }
+
+    .author {
+        width: 40%;
+        float: left;
+        font-size: 5.5vw;
+        margin-top: 2vw; 
+        margin-left: 5vw;       
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 2.5vw 5vw;
+        margin-right: 5vw;
+        margin-top: 8vw;
+    }
+
+    button:hover {
+        font-size: 4.25vw;
+    }
+}
