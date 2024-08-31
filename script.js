@@ -6,7 +6,10 @@ const api = 'https://api.quotable.io/quotes/random';
 
 const getQuote = () => {
     fetch('https://quotes-api-self.vercel.app/quote')
-    .then((data) => data.json())
+    .then((data) => {
+        console.log(data);
+        return data.json();
+    })
     .then((item) => {
         console.log(item);
         quote.innerHTML = item.quote;
